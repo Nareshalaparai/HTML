@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>HERO BIKES</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".Login-form").hide();
+			$(".login").css("background","none");
+			
+			$(".login").click(function(){
+				$(".signup-form").hide();
+				$(".login-form").show();
+				$(".signup").css("background","none")
+				$(".login").css("background","#fff");
+			});
+			
+			$(".signup").click(function(){
+				$(".signup-form").show();
+				$(".login-form").hide();
+				$(".signup").css("background","#fff")
+				$(".login").css("background","none");
+			});
+			
+			$(".btn").click(function(){
+				$(".input").val("");
+			});
+		});
+	</script>
+
+</head>
+
+</br></br><h1 align="center">HERO</h1></br></br>
+<p align="center">Be a part in HERO BIKES, Log-in with your ID or Sign-in </p></br></br>
+
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body{
+	background: #00bfff;
+}
+
+.container
+{
+	width: 450px;
+	margin: 30px auto;
+}
+
+.signup,
+.login{
+	width: 50%;
+	background: #fff;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.signup-form,
+.login-form{
+	background: #fff;
+	padding: 40px;
+	clear: both;
+	width: 100% auto;
+	box-sizing: bolder-box;
+	height: 400px;
+}
+
+.input{
+	width: 100%;
+	box-sizing: bolder-box;
+	padding: 20px;
+	margin-bottom: 25px;
+	bolder: 2px solid #e9eaea;
+	color: #3e3e40;
+	font-size: 14px;
+	outline: none;
+	transition: all 0.5s ease;
+}
+
+.input:focus{
+	border: 2px solid #34b3a0;
+}
+.btn{
+	width: 100%;
+	background: #34b3a0;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+span a{
+	text-decoration: none;
+	color: #000;
+}
+
+</style>
+
+<body>
+
+<div class="container">
+	<div class="signup">SIGN UP</div>
+	<div class="login">LOG IN</div>
+	
+	<div class="signup-form">
+		<input type="text" value="Email ID" placeholder="Email ID" class="input"></br>
+		<input type="text" value="Username" placeholder="Username" class="input"></br>
+		<input type="text" value="Password" placeholder="Password" class="input"></br>
+		<a href="company.html">
+		<div class="btn">Create account</div></a>
+	</div></br>
+	
+	<div class="login-form">
+		<input type="text" value="Email ID or Username" placeholder="Email ID or Username" class="input"></br>
+		<input type="text" value="Password" placeholder="Password" class="input">
+		<a href="company.html">
+		<div class="btn">Log-in</div></a>
+		<span><a href="#">Forgot username or password</a></span>
+	</div>
+	
+</div>
+
+</body>
+
+</html>
